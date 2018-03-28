@@ -47,15 +47,25 @@
 4. Explain why the term assembler language is not quite correct.
     
 5. Explain the difference between big endian and little endian. Also, look up the origins of the term on the Web.
-
+    x86 processors store and retrieve data from memory using little-endian order (low to high). The
+    least significant byte is stored at the first memory address allocated for the data. The remaining
+    bytes are stored in the next consecutive memory positions. Some other computer systems use big-endian order, 
+    which is high to low. The terms big-endian and little-endian were introduced by Danny Cohen in 1980 in Internet 
+    Engineering Note 137, a memorandum entitled "On Holy Wars and a Plea for Peace", subsequently published in print 
+    form in IEEE Computer 14(10).48-57 (1981). He borrowed them from Jonathan Swift, who in Gulliver's Travels (1726) 
+    used them to describe the opposing positions of two factions in the nation of Lilliput. The Big-Endians, who broke 
+    their boiled eggs at the big end, rebelled against the king, who demanded that his subjects break their eggs at the 
+    little end.
 6. Why might you use a symbolic constant rather than an integer literal in your code?
-
+    Programs are easier to read maintain if symbols are used.
 25. Which data directive creates a 32-bit signed integer variable?
-
+    The equal-sign directive associates a symbol name with an integer expression. The syntax is name = expression. 
+    Ordinarily, expression is a 32-bit integer value. When a program is assembled, all occurrences of name are replaced
+    by expression during the assembler’s preprocessor step.
 3.9.2
 4. Find out if you can declare a variable of type DWORD and assign it a negative value. What does this tell you about the assembler's
     type checking?
-
+    
 7. Declare an array of 120 uninitialized unsigned doubleword values.
 
 13. Declare a string variable containing the word "TEST" repeated 500 times.
