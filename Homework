@@ -45,6 +45,8 @@
 
 3.9.1
 4. Explain why the term assembler language is not quite correct.
+    To say that you are programming in assembler is like saying you are programming in compiler when talking about the C/C++ language.
+    An assembler is a program that converts English like assembly language statements into machine code.
     
 5. Explain the difference between big endian and little endian. Also, look up the origins of the term on the Web.
     x86 processors store and retrieve data from memory using little-endian order (low to high). The
